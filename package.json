@@ -16,6 +16,7 @@
     "fs": "0.0.2",
     "csvtojson": "~0.5.2",
     "jsonfile": "~2.2.3",
-    "command-line-args": "~2.1.6"
+    "command-line-args": "~2.1.6",
+    "brain-predict": "0.0.7"
   }
 }
