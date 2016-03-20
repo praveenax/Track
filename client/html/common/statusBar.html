@@ -1,0 +1,23 @@
+<div class="statusContainer col-md-10 col-md-offset-1">
+
+
+    <div ng-repeat="arrow in arrows" id="ar{{arrow.a}}" class="arrow">
+        <div class="arrowTail" style="border: 30px solid {{arrow.color}};border-left-color: transparent;border-right-width: 0px;"></div>
+        <div class="arrowBody" style="background: {{arrow.color}};">
+            <a href="#/{{arrow.typeRedirect}}" style="color: white;">
+                <div class="col-md-12">
+                    {{arrow.typeValue}}</div>
+                <div class="col-md-12">
+                    {{arrow.typeName}}</div>
+            </a>
+
+        </div>
+        <div class="arrowHead" style="border: 30px solid {{arrow.color}};border-right-color: transparent;
+        border-top-color: transparent;
+        border-bottom-color: transparent;"></div>
+
+    </div>
+
+
+
+</div>

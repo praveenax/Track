@@ -1,0 +1,49 @@
+<div>
+    <h5>World Bank Data for India</h5>
+
+    <div class="col-md-12">
+        <div class="col-md-6">
+            <input placeholder="Enter Value for filtering" class="form-control" ng-model="fieldSearch" type="text">
+        </div>
+        <div class="col-md-6">
+            <button class="btn btn-default" ng-click="onFilter()">Filter</button>
+        </div>
+    </div>
+
+    <div class="col-md-12">
+
+        <div class="col-md-4">
+            <select  ng-model="graphSelectValue" class="form-control" name="">
+                <option ng-repeat="value in dropValues" value="{{value}}">{{value}}</option>
+            </select>
+        </div>
+        <div class="col-md-4">
+            <select ng-model="graphSelectValue2" class="form-control" name="">
+                <option ng-repeat="value in dropValues" value="{{value}}">{{value}}</option>
+            </select>
+        </div>
+
+        <div class="col-md-2">
+            <select ng-model="type" class="form-control" name="">
+                <option value="bar">bar</option>
+                <option value="line">line</option>
+            </select>
+        </div>
+        
+        <div class="col-md-2">
+
+        <button class="btn btn-default" ng-click="onSelectUpdate()">Render</button>
+    </div>
+    </div>
+
+
+
+    
+
+
+
+    <canvas id="myChart" width="1000" height="500"></canvas>
+
+
+
+</div>
