@@ -43,6 +43,18 @@
 
 
     <canvas id="myChart" width="1000" height="500"></canvas>
+    
+    
+    <div id="dataHolder" class="panel panel-default" style="width:220px;height:300px;overflow:auto; position:fixed;left:0%;top:50%;    background: white;">
+        
+        <div class="panel panel-success" style="padding: 10px;background: green;
+    color: white;" ng-repeat="item in items">{{item.detail}} --- {{item.year}}</div>
+       
+       
+       <div class="panel panel-success" style="padding: 10px;background: red;
+    color: white;" ng-repeat="item in items2">{{item.detail}} --- {{item.year}}</div>
+        
+    </div>
 
 
 

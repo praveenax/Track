@@ -1,4 +1,32 @@
-<div id="container" style="position: relative; width: 800px; height: 500px;background: #266E84;">
+<style>
+    .inputValue{
+        
+            position: fixed;
+    top: 30%;
+    right: 0%;
+    background: white;
+    width: 300px;
+    height: 300px;
+    overflow: auto;
+        
+    }
+</style>
+
+<div id="container" style="position: relative; width: 600px; height: 500px;background: #266E84;">
 </div>
+
+<div class="inputValue">
+    <input ng-model="i1" type="text" class="form-control">
+    <input ng-model="i2"  type="text" class="form-control">
+    <input ng-model="i3"  type="text" class="form-control">
+    <input ng-model="i4"  type="text" class="form-control">
+    
+    <button ng-click="onChange()">Render</button>
+</div>
+
+<br>
+  <div id="slider" style="width: 600px;"></div>
 <script>
+    
+       
 </script>
